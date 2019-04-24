@@ -14,7 +14,7 @@ static char *LDOptionalSingletonKey = "LD_OptionalSingleton";
     return [self LD_sharedInstance];
 }
 + (void)LD_freeSharedSingleton {
-    [self freeSharedInstance];
+    [self LD_freeSharedInstance];
 }
 + (instancetype)LD_sharedInstance {
     Class selfClass = [self class];
